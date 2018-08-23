@@ -1,0 +1,26 @@
+<%if (alerts.success){%>
+<% alerts.success.forEach(function(msg){%>
+<div class='row'>
+
+	<div class='card green indigo accent-4'>
+		<h4> <%= msg %> </h4>
+	</div>
+
+</div>
+
+<%});%>
+
+<%}%>
+
+<%if (alerts.error) {%>
+<% alerts.error.forEach(function(msg){%>
+<div class='row'>
+
+	<div class='card deep-orange darken-4'>
+		<%= msg %>
+	</div>
+
+</div>
+
+<%});%>
+<%}%>

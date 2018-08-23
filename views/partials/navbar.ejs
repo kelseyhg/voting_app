@@ -1,10 +1,12 @@
   <nav>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper teal darken-4">
       <a href="/" class="brand-logo right">BOIL</a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <% if(currentUser) {%>
         <li><a href="/profile">Profile</a></li>
-        <li><a href="/auth/login">Login</a></li>
         <li><a href="/auth/logout">Log out</a></li>
+        <% } %>
+        <li><a href="/auth/login">Login</a></li>
         <li><a href="/auth/signup">Sign up</a></li>
       </ul>
     </div>
