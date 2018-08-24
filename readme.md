@@ -50,31 +50,37 @@ git clone <repo_link> <new_project_name>
 ```
 createdb <new_db_name>
 ```
-#### 3. Open `config.json` and change the following: 
+#### 3. Install node modules from `package.json`
+```
+ npm install
+```
+#### 4. Customize with project name
+* Title in layout.js
+* Logo in navbar
+* Description/repo link in package.json
+* Remove auth boilerplate readme and update readme for new project
+
+#### 5. Open `config.json` and change the following: 
 * Change database name to new_db_name from above
 * Set username/password for your local environment
 * Make sure the flavor of SQL is correct for your project
 
 > NOTE: if changing from Postgres, need different node_modules
 
-#### 4. Edit/check models and migrations for your project needs
+#### 6. Edit/check models and migrations for your project needs
 
 For example, remove dob field or admin field; add username field, etc
 
 Delete or add to both migration and model
 
-#### 5. Run the migrations
+#### 7. Run the migrations
 ```
 sequelize db:migrate
 ``` 
 
-#### 6. Add a `.env` file with a SESSION_SECRET key for session implementation
+#### 8. Add a `.env` file with a SESSION_SECRET key for session implementation
 
-#### 7. Install node modules from `package.json`
-```
- npm install
-```
-#### 8. Run your server and make sure everything works
+#### 9. Run your server and make sure everything works
 If nodemon is installed globally:
 ```
 nodemon
@@ -83,7 +89,7 @@ Otherwise:
 ```
 node index.js
 ```
-#### 9. Create a new repository for your new project
+#### 10. Create a new repository for your new project
 * Create a new repository on your personal GitHub account
 * Delete the old remote to origin
 * Add new repo as the new remote location (can still be called origin)
