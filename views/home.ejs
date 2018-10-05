@@ -1,2 +1,24 @@
 
-<div height="400px" id="home-flag"><img src="america.jpg"></div>
+<% const quotes = ["Our lives begin to end the day we become silent about things that matter", "Elections belong to the people. It’s their decisions.", "There’s no such thing as a vote that doesn’t matter."] %>
+
+<% const speakers = ["Martin Luther King Jr.", "Abraham Lincoln", "Barack Obama"] %>
+
+<% var i = Math.floor( Math.random() * 3 ) %>
+
+<div height="400px" id="home-flag">
+
+
+
+
+		<div class="quote-holder">
+
+			<h2 class="home-quote"> "<%= quotes[i] %>" </h2> <br><br>
+			<p> — <%= speakers[i] %></p>
+			<a href="/auth/login" type="submit" class="front-btn waves-effect waves-light btn-large red darken-4">Log in</a>
+			<a href="/auth/signup" type="submit" class="front-btn waves-effect waves-light btn-large red darken-4">Sign up</a>
+		</div>
+
+
+
+</div>
+
