@@ -55,6 +55,10 @@ body {
 .voted {
 	color: blue;
 }
+.final {
+	color: #165ecc;
+	font-size: 60px;
+}
 
 .submit-btn {
 	display: inline-block;
@@ -65,5 +69,23 @@ body {
 .submit-btn:hover {
 	border: 2px solid #8e1b1b;
 }
+
+#pro {
+	color: blue;
+	font-size: 18px;
+}
+
+#con {
+	color: red;
+	font-size: 18px;
+}
+
+.success-card {
+	margin-top: 30px;
+	background-color: #ccdef9;
+	padding: 30px;
+	border: 1px solid #165ecc;
+}
+
 
 

@@ -32,4 +32,8 @@ router.get('/submit', loggedIn, function(req, res){
 	res.render('measures/submit')
 });
 
+router.get('/success', loggedIn, function(req, res){
+	res.render('measures/success')
+});
+
 module.exports = router;
