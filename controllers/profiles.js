@@ -12,4 +12,6 @@ router.get('/', loggedIn, function(req, res){
 	res.render('profile/index');
 });
 
+
+
 module.exports = router;
