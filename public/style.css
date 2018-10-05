@@ -1,3 +1,12 @@
 #top-nav {
 	background-color: #0f51bc;
 }
+
+.small {
+	color: gray;
+	font-size: 8;
+}
+
+body {
+	color: red;
+}
