@@ -1,16 +1,21 @@
 
 <div class="container">
 
-<h2><%=currentUser.firstname%>'s November 2018 Ballot</h2>
+<h2 class="center-align"><%=currentUser.firstname%>'s November 2018 Ballot</h2>
 
+<div class="center-align">
+	<img src="http://www.kiplinger.com/slideshow/investing/T052-S001-the-10-best-stocks-of-president-trump-first-year/images/intro.jpg" alt="not-my-president" id="intro-image">
+</div>
 
 
 <div class='row'>
+
 	<div class='col s12'>
 		<h4 class="ballot-header"> Washington State Ballot Measures </h4>
 	</div>
 	<div class='col s6'>
 		<p>Voting Instructions: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
 
 		<form action="/profile/startvote" method="POST">
 			<button type="submit" class="waves-effect waves-light btn-large red darken-4">Start Ballot</button>
