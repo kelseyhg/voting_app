@@ -28,4 +28,8 @@ router.get('/av-19', loggedIn, function(req, res){
 	res.render('measures/av-19')
 });
 
+router.get('/submit', loggedIn, function(req, res){
+	res.render('measures/submit')
+});
+
 module.exports = router;
