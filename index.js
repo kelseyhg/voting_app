@@ -13,6 +13,7 @@ var session = require('express-session');
 var app = express();
 
 // set and use statements
+app.use(express.static(__dirname + '/public/'));
 app.set('view engine', 'ejs');
 app.use(ejsLayouts);
 app.use(bodyParser.urlencoded({extended: false}));

@@ -4,9 +4,10 @@
 
 .small {
 	color: gray;
-	font-size: 8;
+	font-size: 10px;
+	font-style: italic;
 }
 
 body {
-	color: red;
+
 }
