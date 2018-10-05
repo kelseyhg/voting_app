@@ -44,7 +44,7 @@ router.get('/final', loggedIn, function(req, res){
 })
 
 router.get('/thankyou', loggedIn, function(req, res){
-	res.render('measures/thankyou')
+	res.render('measures/success')
 })
 
 //Define PUT routes
