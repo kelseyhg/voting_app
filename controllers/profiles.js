@@ -39,6 +39,14 @@ router.get('/measure-av19', loggedIn, function(req, res){
 	res.render('measures/av-19')
 })
 
+router.get('/final', loggedIn, function(req, res){
+	res.render('measures/submit')
+})
+
+router.get('/thankyou', loggedIn, function(req, res){
+	res.render('measures/thankyou')
+})
+
 //Define PUT routes
 router.put('/measure-i940', loggedIn, function(req, res){
 	console.log("the put body is", req.body)
