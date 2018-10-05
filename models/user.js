@@ -23,14 +23,9 @@ module.exports = (sequelize, DataTypes) => {
       }
     },
     dob: DataTypes.DATE,
-    admin: DataTypes.BOOLEAN,
-    image: {
+    voted: DataTypes.BOOLEAN,
+    address: {
       type:DataTypes.STRING,
-      validate: {
-        isUrl: {
-          msg: "not a valid url"
-        }
-      }
      }
     }, {
     hooks: {
@@ -50,7 +45,6 @@ module.exports = (sequelize, DataTypes) => {
     return bcrypt.compareSync(typedPassword, this.password);
   }
 
-  console.log("DOES THIS EVEN WORK")
 
   return user;
 };
