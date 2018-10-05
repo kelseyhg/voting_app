@@ -1,3 +1,5 @@
+
+
 #top-nav {
 	background-color: #0f51bc;
 }
@@ -5,7 +7,37 @@
 #home-flag {
 	width: 100vw;
 	height: 100vh;
+	background-image: url("america.jpg");
 	overflow: hidden;
+	color: white;
+	text-align: center;
+}
+
+.quote-holder {
+	margin: auto;
+	width: 80vw;
+	background-color: #0f51bc;
+	margin-top: 50px;
+	border-radius: 40px;
+	padding: 30px;
+}
+
+.home-quote {
+	color: white;
+	font-family: 'Abril Fatface', cursive;
+	font-size: 60px;
+	text-shadow: 3px 3px #ff0000;
+}
+
+.front-btn {
+	display: inline-block;
+	margin: 10px;
+}
+
+.vote-logo {
+	display: inline-block;
+	padding-left: 30px;
+	padding-top: 10px;
 }
 
 .small {
@@ -15,7 +47,7 @@
 }
 
 body {
-
+	font-family: 'Raleway', sans-serif;
 }
 
 .side-title {
@@ -93,5 +125,32 @@ body {
 	border: 1px solid #165ecc;
 }
 
+.summary-cards {
+	margin-top: 90px;
+}
 
+#b-sum {
+	color: #bc1e1e;
+}
 
+#ballot-header {
+	text-align: center;
+}
+
+[type="radio"]:checked + span:after,
+ 
+[type="radio"].with-gap:checked + span:before,
+ 
+[type="radio"].with-gap:checked + span:after {
+ 
+  border: 2px solid #165ecc;
+ 
+}
+
+[type="radio"]:checked + span:after,
+ 
+[type="radio"].with-gap:checked + span:after {
+ 
+  background-color: #165ecc;
+ 
+}
