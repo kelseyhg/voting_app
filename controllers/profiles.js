@@ -1,5 +1,6 @@
 // requirements
 var express = require('express');
+var db = require('../models');
 
 // declare a new router
 var router = express.Router();
@@ -11,6 +12,15 @@ var loggedIn = require('../middleware/loggedIn');
 router.get('/', loggedIn, function(req, res){
 	res.render('profile/index');
 });
+
+//define PUT routes
+router.get('/addvote/:id', loggedIn, function(req, res){
+	db.nov2018.findById(req.params.id).then(function(editSight){
+		//res.render('profile/editSightings', { edit: editSight })
+	}).catch(function(err){
+		console.log('DANGER! DANGER!')
+	})
+})
 
 //Define POST routes
 router.post('/startvote', loggedIn, function(req, res){
