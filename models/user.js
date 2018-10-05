@@ -24,9 +24,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     dob: DataTypes.DATE,
     voted: DataTypes.BOOLEAN,
-    address: {
-      type:DataTypes.STRING,
-     }
+    address: DataTypes.STRING
     }, {
     hooks: {
       beforeCreate: function(pendingUser) {
@@ -38,7 +36,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   });
   user.associate = function(models) {
-    // associations can be defined here
+    models.user.hasMany(models.nov2018); //Connects this model to the nov 2018 model
   };
 
   user.prototype.isValidPassword = function(typedPassword){
