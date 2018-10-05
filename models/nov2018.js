@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var nov2018 = sequelize.define('nov2018s', {
+  var nov2018 = sequelize.define('nov2018', {
     userId: DataTypes.INTEGER,
     i940: DataTypes.STRING,
     i1631: DataTypes.STRING,
@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
     av19: DataTypes.STRING
   }, {});
   nov2018.associate = function(models) {
-    // associations can be defined here
+    models.nov2018.belongsTo(models.user);
   };
   return nov2018;
 };
