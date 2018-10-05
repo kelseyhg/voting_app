@@ -135,6 +135,12 @@ body {
 	height: auto;
 }
 
+#flash-thing {
+	font-size: 14px;
+	color: white;
+	text-align: center;
+}
+
 .summary-cards {
 	margin-top: 90px;
 }
