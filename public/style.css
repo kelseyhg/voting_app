@@ -11,3 +11,59 @@
 body {
 
 }
+
+.side-title {
+	display: inline-block;
+	font-size: 20px;
+	padding-top: 35px;
+}
+
+.nav-pill {
+	width: 200px;
+	height: 100px;
+	background-color: #e8eef7;
+	border: 1px solid #c9d4e5;
+	text-align: center;
+	margin-left: -10px;
+}
+
+.side {
+	display: inline-block;
+	font-size: 40px;
+	padding-top: 15px;
+}
+.clicking {
+
+}
+
+.clicking:hover {
+	width: 205px;
+	height: 104px;
+	border: 2px solid #c9d4e5;
+}
+
+.selected {
+	background-color: #f4d1d0;
+	border: 2px solid #d89b99;
+}
+
+#summary {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.voted {
+	color: blue;
+}
+
+.submit-btn {
+	display: inline-block;
+	padding-right: 100px;
+	padding-left: 110px;
+}
+
+.submit-btn:hover {
+	border: 2px solid #8e1b1b;
+}
+
+
