@@ -73,7 +73,7 @@ $(document).ready(function(){
 		})
     })
     
-    $('#add-av19').submit(function(e){
+    $('#add-19').submit(function(e){
 		e.preventDefault();
 
         console.log('This is just before the ajax call')
@@ -85,7 +85,7 @@ $(document).ready(function(){
 			data: $(this).serialize()
 		}).done(function(res){
             console.log('success', res)
-            window.location.href = "/profile/"
+            window.location.href = "/profile/final"
 		}).fail(function(err){
 			console.log('error', err)
 		})
