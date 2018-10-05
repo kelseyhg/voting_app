@@ -26,26 +26,24 @@
   <a href="#">Oil Spill Bill Signed by Governor Inslee</a>  |  <span class="small">The Seattle Times</span> <br>
 
 
-  <hr />
 
-    <form action='#' method="POST">
-    <div class='row'>
+<form id="add-19" action='/profile/measure-av19' method="PUT">
+  <div class='row'>
+    <p>
+          <label>
+            <input name="group1" type="radio" value="yes" />
+            <span>Vote YES</span>
+          </label>
+      </p>
       <p>
-            <label>
-              <input name="group1" type="radio" />
-              <span>Vote MAINTAIN</span>
-            </label>
-        </p>
-        <p>
-            <label>
-              <input name="group1" type="radio" />
-              <span>Vote REPEAL</span>
-            </label>
-        </p>
-        <button class="btn waves-effect waves-light" type="submit" name="action">Next
-      <i class="material-icons right"></i>
-    </button>
-    </div>
-  </form>
-<div class='row'>
-<div class='col s9 right'>
+          <label>
+            <input name="group1" type="radio" value="no" />
+            <span>Vote NO</span>
+          </label>
+      </p>
+      <button class="btn waves-effect waves-light" type="submit" name="action">Next
+    <i class="material-icons right"></i>
+  </button>
+  </div>
+</form>
+

@@ -23,27 +23,24 @@
   <a href="#">I-1634 Explained: An Initiative Response to Seattle's Soda Tax</a>  |  <span class="small">The Stranger</span> <br>
   <a href="#"> Who Supports I-1634? </a>  |  <span class="small">The Spokesman-Review</span> <br>
   <a href="#"> The Grocery Tax's Possible Effects on Business and Consumers </a>  |  <span class="small">The Spokesman-Review</span> <br>
-
   <hr />
 
-    <form action='#' method="POST">
-    <div class='row'>
+<form id="add-1634" action='/profile/measure-i1634' method="PUT">
+  <div class='row'>
+    <p>
+          <label>
+            <input name="group1" type="radio" value="yes" />
+            <span>Vote YES</span>
+          </label>
+      </p>
       <p>
-            <label>
-              <input name="group1" type="radio" />
-              <span>Vote YES</span>
-            </label>
-        </p>
-        <p>
-            <label>
-              <input name="group1" type="radio" />
-              <span>Vote NO</span>
-            </label>
-        </p>
-        <button class="btn waves-effect waves-light" type="submit" name="action">Next
-      <i class="material-icons right"></i>
-    </button>
-    </div>
-  </form>
-<div class='row'>
-<div class='col s9 right'> 
+          <label>
+            <input name="group1" type="radio" value="no" />
+            <span>Vote NO</span>
+          </label>
+      </p>
+      <button class="btn waves-effect waves-light" type="submit" name="action">Next
+    <i class="material-icons right"></i>
+  </button>
+  </div>
+</form>
